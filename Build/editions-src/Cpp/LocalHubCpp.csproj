@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <AssemblyName>LocalHubCpp</AssemblyName>
+    <RootNamespace>LocalHubCppApp</RootNamespace>
+    <ApplicationIcon>..\..\..\Resources\icon-cpp.ico</ApplicationIcon>
+    <OutputPath>..\..\exe-temp\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>..\..\..\obj\editions-cpp\</IntermediateOutputPath>
+  </PropertyGroup>
+</Project>

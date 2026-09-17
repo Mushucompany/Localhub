@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <AssemblyName>LocalHubJava</AssemblyName>
+    <RootNamespace>LocalHubJavaApp</RootNamespace>
+    <ApplicationIcon>..\..\..\Resources\icon-java.ico</ApplicationIcon>
+    <OutputPath>..\..\editions\java\exe\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>..\..\..\obj\editions-java\</IntermediateOutputPath>
+  </PropertyGroup>
+</Project>

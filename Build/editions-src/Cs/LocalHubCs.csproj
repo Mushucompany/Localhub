@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <AssemblyName>LocalHubCs</AssemblyName>
+    <RootNamespace>LocalHubCsApp</RootNamespace>
+    <ApplicationIcon>..\..\..\Resources\icon-cs.ico</ApplicationIcon>
+    <OutputPath>..\..\editions\cs\exe\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>..\..\..\obj\editions-cs\</IntermediateOutputPath>
+  </PropertyGroup>
+</Project>

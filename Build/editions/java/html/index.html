@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LocalHub Java Edition</title>
+<link rel="icon" href="../resources/icon-java.ico">
+<style>
+:root{--accent:#e86f00;--bg:#120a00;--panel:#180e04;--card:#201408;--text:#e8dcc8;--muted:#a09070;--border:#3a2400}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.banner{width:100%;height:200px;background:#120a00;display:flex;align-items:center;justify-content:center;border-bottom:2px solid var(--accent)}
+.banner img{max-width:100%;max-height:100%;object-fit:contain}
+.header{display:flex;align-items:center;justify-content:space-between;padding:12px 32px;background:var(--panel);border-bottom:1px solid var(--border)}
+.logo{font-size:1.3rem;font-weight:700;color:var(--accent)}
+.login-group{display:flex;gap:8px;flex-wrap:wrap}
+.login-btn{padding:6px 14px;border-radius:6px;font-size:.8rem;font-weight:600;border:1px solid var(--border);cursor:pointer;background:var(--card);color:var(--text)}
+.login-btn:hover{border-color:var(--accent)}
+.main{display:flex;min-height:calc(100vh - 270px)}
+.sidebar{width:220px;background:var(--panel);padding:12px;border-right:1px solid var(--border)}
+.sidebar h3{font-size:.72rem;text-transform:uppercase;color:var(--muted);margin:12px 0 6px 10px}
+.file-item{padding:5px 10px;border-radius:5px;cursor:pointer;font-size:.82rem}
+.file-item:hover{background:var(--card)}
+.content{flex:1;padding:20px 28px}
+textarea{width:100%;min-height:250px;background:#0e0802;color:#d8c8a0;border:1px solid var(--border);border-radius:8px;padding:14px;font-family:'Consolas',monospace;font-size:.85rem;resize:vertical}
+textarea:focus{outline:none;border-color:var(--accent)}
+.btn-group{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}
+.btn{padding:8px 20px;border-radius:6px;font-weight:600;font-size:.85rem;border:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{filter:brightness(1.2)}
+.btn-outline{background:transparent;border:1px solid var(--border);color:var(--text)}
+.reg-form{margin-top:16px;padding:16px;background:var(--card);border-radius:8px;border:1px solid var(--border)}
+.reg-form h3{margin-bottom:10px;font-size:1rem}
+.reg-form label{font-size:.82rem;color:var(--muted);display:block;margin:6px 0 2px}
+.reg-form input{width:100%;padding:8px 12px;margin-bottom:6px;background:var(--panel);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:.85rem}
+.reg-form input:focus{outline:none;border-color:var(--accent)}
+.contact-info{font-size:.82rem;color:var(--muted);margin-top:12px;padding:10px;background:var(--panel);border-radius:6px;border:1px solid var(--border)}
+.contact-info strong{color:var(--accent)}
+@media(max-width:768px){.main{flex-direction:column}.sidebar{width:100%;max-height:140px}.banner{height:120px}}
+</style>
+</head>
+<body>
+<div class="banner"><img src="../resources/banner-java.png" alt="Java Edition"></div>
+<div class="header">
+<div class="logo">LocalHub <span style="color:var(--accent)">Java</span></div>
+<div class="login-group">
+<button class="login-btn" onclick="login('GitHub')">⬡ GitHub</button>
+<button class="login-btn" onclick="login('VK')">Ⓥ VK</button>
+<button class="login-btn" onclick="login('Microsoft')">⊞ Microsoft</button>
+<button class="login-btn" onclick="login('Google')">Ⓖ Google</button>
+</div>
+</div>
+<div class="main">
+<div class="sidebar">
+<h3>📁 Проекты</h3>
+<div class="file-item">📄 Main.java</div>
+<div class="file-item">📄 WorldGen.java</div>
+<div class="file-item">📄 build.gradle</div>
+<h3>🛠 Инструменты</h3>
+<div class="file-item">⚙ Сборка (javac)</div>
+<div class="file-item">🐛 Отладка (jdb)</div>
+<div class="file-item">📦 Релиз</div>
+</div>
+<div class="content">
+<h2>✏️ Java Editor</h2>
+<textarea id="code">public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello from Java Edition!");
+        
+        String[] langs = {"Java", "C++", "C#", "C"};
+        for (String lang : langs) {
+            System.out.println("  - " + lang);
+        }
+    }
+}</textarea>
+<div class="btn-group">
+<button class="btn btn-primary" onclick="runCode()">▶ Компилировать</button>
+<button class="btn btn-outline" onclick="saveCode()">💾 Сохранить</button>
+</div>
+<div class="reg-form">
+<h3>📧 Связаться с разработчиком</h3>
+<label>Ваш Email</label>
+<input type="email" placeholder="email@example.com" id="email">
+<label>Тема</label>
+<input type="text" placeholder="Сообщение" id="subject">
+<div class="btn-group">
+<button class="btn btn-primary" onclick="sendEmail()">✉ Отправить</button>
+</div>
+</div>
+<div class="contact-info">
+<strong>📬 Java Edition Support:</strong> java-edition@localhub.dev
+</div>
+</div>
+</div>
+<script>
+function login(p){alert('Вход через '+p+' (Java Edition)')}
+function runCode(){alert('Компиляция Java кода...')}
+function saveCode(){alert('Код сохранён в Java Edition')}
+function sendEmail(){
+  var e=document.getElementById('email').value;
+  var s=document.getElementById('subject').value;
+  if(!e||!s){alert('Заполните поля');return}
+  alert('Сообщение отправлено с '+e+' (Java Edition support)');
+}
+</script>
+</body>
+</html>

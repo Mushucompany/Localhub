@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LocalHub Hub Edition</title>
+<link rel="icon" href="Resources/icon.ico">
+<style>
+:root{--accent:#9a7bd8;--bg:#0d0d12;--panel:#15151c;--card:#1a1a24;--text:#e8e8f0;--muted:#8888a0;--border:#2a2a3a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.header{display:flex;align-items:center;justify-content:space-between;padding:16px 40px;background:var(--panel);border-bottom:1px solid var(--border);flex-wrap:wrap;gap:10px}
+.logo{font-size:1.5rem;font-weight:700;color:var(--accent)}
+.logo small{font-size:.8rem;color:var(--muted);margin-left:8px}
+.login-group{display:flex;gap:10px;flex-wrap:wrap}
+.login-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;font-size:.85rem;font-weight:600;border:1px solid var(--border);cursor:pointer;background:var(--card);color:var(--text)}
+.login-btn:hover{border-color:var(--accent);background:#1e1e2e}
+.content{padding:24px 32px}
+.editor-section{margin-top:20px}
+textarea{width:100%;min-height:220px;background:#0a0a0f;color:#c8d0e0;border:1px solid var(--border);border-radius:8px;padding:14px;font-family:'Consolas',monospace;font-size:.85rem;resize:vertical}
+textarea:focus{outline:none;border-color:var(--accent)}
+.btn-group{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}
+.btn{padding:9px 22px;border-radius:7px;font-weight:600;font-size:.85rem;border:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{filter:brightness(1.2)}
+.btn-outline{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn-outline:hover{border-color:var(--accent)}
+.reg-form{margin-top:16px;padding:16px;background:var(--card);border-radius:8px;border:1px solid var(--border)}
+.reg-form h3{margin-bottom:10px;font-size:1rem}
+.reg-form label{font-size:.82rem;color:var(--muted);display:block;margin:6px 0 2px}
+.reg-form input{width:100%;padding:8px 12px;margin-bottom:6px;background:var(--panel);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:.85rem}
+.reg-form input:focus{outline:none;border-color:var(--accent)}
+.contact-info{font-size:.82rem;color:var(--muted);margin-top:12px;padding:10px;background:var(--panel);border-radius:6px;border:1px solid var(--border)}
+.contact-info strong{color:var(--accent)}
+@media(max-width:768px){.header{flex-direction:column;padding:12px 16px}}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo">LocalHub <small>Multi-Language Platform</small></div>
+<div class="login-group">
+<button class="login-btn" onclick="login('GitHub')">⬡ GitHub</button>
+<button class="login-btn" onclick="login('VK')">Ⓥ VK</button>
+<button class="login-btn" onclick="login('Microsoft')">⊞ Microsoft</button>
+<button class="login-btn" onclick="login('Google')">Ⓖ Google</button>
+</div>
+</div>
+<div class="content">
+<h2>✏️ Hub Editor</h2>
+<textarea id="code">// LocalHub — Hub Edition
+// Центральная витрина проектов
+
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Добро пожаловать в LocalHub!");
+        Console.WriteLine("Выберите язык программирования");
+        Console.WriteLine("и начните создавать свои проекты.");
+    }
+}</textarea>
+<div class="btn-group">
+<button class="btn btn-primary" onclick="runCode()">▶ Запустить</button>
+<button class="btn btn-outline" onclick="saveCode()">💾 Сохранить</button>
+</div>
+<div class="reg-form">
+<h3>📧 Связаться с командой Hub</h3>
+<label>Ваш Email</label>
+<input type="email" placeholder="email@example.com" id="email">
+<label>Тема</label>
+<input type="text" placeholder="Сообщение" id="subject">
+<div class="btn-group">
+<button class="btn btn-primary" onclick="sendEmail()">✉ Отправить</button>
+</div>
+</div>
+<div class="contact-info">
+<strong>📬 Hub Support:</strong> hub@localhub.dev<br>
+<em>Каждое издание — отдельное приложение со своей поддержкой.</em>
+</div>
+</div>
+<script>
+function login(p){alert('Вход через '+p+' (Hub Edition)')}
+function runCode(){alert('Запуск Hub Edition...')}
+function saveCode(){alert('Код сохранён в Hub Edition')}
+function sendEmail(){
+  var e=document.getElementById('email').value;
+  var s=document.getElementById('subject').value;
+  if(!e||!s){alert('Заполните поля');return}
+  alert('Сообщение отправлено с '+e+' (hub support)');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <AssemblyName>LocalHub</AssemblyName>
+    <RootNamespace>LocalHubHubApp</RootNamespace>
+    <OutputPath>..\..\exe\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>..\..\..\obj\editions-hub\</IntermediateOutputPath>
+  </PropertyGroup>
+</Project>

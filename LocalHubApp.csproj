@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <RootNamespace>LocalHubApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Build\**" />
+    <Content Remove="Build\**" />
+    <None Remove="Build\**" />
+    <EmbeddedResource Remove="Build\**" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <AssemblyName>LocalHubC</AssemblyName>
+    <RootNamespace>LocalHubCApp</RootNamespace>
+    <ApplicationIcon>..\..\..\Resources\icon-c.ico</ApplicationIcon>
+    <OutputPath>..\..\editions\c\exe\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>..\..\..\obj\editions-c\</IntermediateOutputPath>
+  </PropertyGroup>
+</Project>
