@@ -1,0 +1,14 @@
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\editions\java\exe\LocalHubJava.exe
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\editions\java\exe\LocalHubJava.deps.json
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\editions\java\exe\LocalHubJava.runtimeconfig.json
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\editions\java\exe\LocalHubJava.dll
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\editions\java\exe\LocalHubJava.pdb
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\LocalHubJava.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\LocalHubJava.AssemblyInfoInputs.cache
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\LocalHubJava.AssemblyInfo.cs
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\LocalHubJava.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\LocalHubJava.dll
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\refint\LocalHubJava.dll
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\LocalHubJava.pdb
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\LocalHubJava.genruntimeconfig.cache
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-java\ref\LocalHubJava.dll

@@ -1,0 +1,14 @@
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\exe\LocalHub.exe
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\exe\LocalHub.deps.json
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\exe\LocalHub.runtimeconfig.json
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\exe\LocalHub.dll
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\Build\exe\LocalHub.pdb
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\LocalHubHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\LocalHubHub.AssemblyInfoInputs.cache
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\LocalHubHub.AssemblyInfo.cs
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\LocalHubHub.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\LocalHub.dll
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\refint\LocalHub.dll
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\LocalHub.pdb
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\LocalHubHub.genruntimeconfig.cache
+C:\Users\Даниил\Documents\MultiTool\HomeChats\Chat-3\obj\editions-hub\ref\LocalHub.dll
